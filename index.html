@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#A3120D">
+    <title>Wendy Finance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="brand">
+            <span class="brand-icon">W</span>
+            <div>
+                <h1>Wendy Finance</h1>
+                <p>Gestão financeira • Wendy Doces</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <p>PAINEL FINANCEIRO</p>
+            <h2>Olá, Isabel! ♡</h2>
+            <span>Vamos conferir como está a loja?</span>
+        </section>
+
+        <section class="dashboard">
+            <article class="card">
+                <span>Vendas totais</span>
+                <h2 id="total-vendas">R$ 0,00</h2>
+            </article>
+
+            <article class="card">
+                <span>Caixinha de custos</span>
+                <h2 id="total-custos">R$ 0,00</h2>
+            </article>
+
+            <article class="card highlight">
+                <span>Caixinha de lucro</span>
+                <h2 id="total-lucro">R$ 0,00</h2>
+            </article>
+
+            <article class="card">
+                <span>Caixinha de frete</span>
+                <h2 id="total-frete">R$ 0,00</h2>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>♡ Registrar venda</h2>
+
+            <label for="produto">Produto</label>
+            <select id="produto"></select>
+
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" min="1" value="1">
+
+            <label class="checkbox-label">
+                <input type="checkbox" id="tem-frete">
+                Venda com frete
+            </label>
+
+            <button id="registrar-venda">
+                Registrar venda
+            </button>
+        </section>
+
+        <section class="panel">
+            <h2>Histórico de vendas</h2>
+            <div id="historico">
+                <p class="empty">Nenhuma venda registrada ainda.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Wendy Doces ♡ Feito com carinho.</p>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
